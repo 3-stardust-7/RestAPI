@@ -9,3 +9,12 @@ def root():
 uvicorn main:app --reload 
 here --reload flag is used to automatiaclly refrfesh the server anytime changes is made
 routs are gonna be different url we enter
+
+response_model
+respose from server will be conforming to that model
+
+http://127.0.0.1:8000/docs very useful
+
+http://127.0.0.1:8000/redoc
+
+http://127.0.0.1:8000/openapi.json, tells everything about fastapi server
