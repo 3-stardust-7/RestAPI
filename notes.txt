@@ -1,0 +1,11 @@
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/") this is app decorator that defines path or endpoint for get method,when we access it, the function below gets called
+def root():
+    return {"Hello":"World"}
+
+uvicorn main:app --reload 
+here --reload flag is used to automatiaclly refrfesh the server anytime changes is made
+routs are gonna be different url we enter
